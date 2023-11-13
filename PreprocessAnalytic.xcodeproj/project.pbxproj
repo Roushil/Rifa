@@ -66,6 +66,7 @@
 		2BC51B7D2AF91C53005A8A31 /* UserInteractionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInteractionView.swift; sourceTree = "<group>"; };
 		2BC51B802AF92A70005A8A31 /* ResultDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDisplayView.swift; sourceTree = "<group>"; };
 		2BC51B822AF92A75005A8A31 /* ResultDisplayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultDisplayView.xib; sourceTree = "<group>"; };
+		2BFA3C7E2B0249DA0045A45C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +99,7 @@
 		2B2E4ECB2ACC64E000117107 /* PreprocessAnalytic */ = {
 			isa = PBXGroup;
 			children = (
+				2BFA3C7E2B0249DA0045A45C /* Info.plist */,
 				2B2E4ECC2ACC64E000117107 /* AppDelegate.swift */,
 				2BC51B132AF7EDEE005A8A31 /* AppConstant.swift */,
 				2BB2FB062AF7C86E00E518C7 /* UIComponents */,
@@ -463,6 +465,7 @@
 				DEVELOPMENT_TEAM = 9C23YHZU82;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PreprocessAnalytic/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -490,6 +493,7 @@
 				DEVELOPMENT_TEAM = 9C23YHZU82;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PreprocessAnalytic/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
