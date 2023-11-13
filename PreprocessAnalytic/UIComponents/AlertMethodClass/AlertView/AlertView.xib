@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AlertView" customModule="PreprocessAnalytic" customModuleProvider="target">
+            <connections>
+                <outlet property="alertImageView" destination="ufP-aK-MGF" id="6PA-oR-Ygv"/>
+                <outlet property="customView" destination="c22-O7-iKe" id="IXq-JI-iaW"/>
+                <outlet property="messageField" destination="z8g-Fu-cey" id="2ak-Wp-8Ea"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView wantsLayer="YES" id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="472" height="597"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView blendingMode="behindWindow" material="fullScreenUI" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="Jtp-4a-gTk">
+                    <rect key="frame" x="0.0" y="0.0" width="472" height="597"/>
+                    <subviews>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ufP-aK-MGF">
+                            <rect key="frame" x="0.0" y="0.0" width="472" height="597"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="linkicon" id="JfI-dL-i24"/>
+                        </imageView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="z8g-Fu-cey">
+                            <rect key="frame" x="109" y="261" width="254" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="250" id="jPu-KP-uOD"/>
+                            </constraints>
+                            <textFieldCell key="cell" alignment="center" title="Fetching..." id="qCS-Mq-00a">
+                                <font key="font" usesAppearanceFont="YES"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="z8g-Fu-cey" firstAttribute="centerX" secondItem="Jtp-4a-gTk" secondAttribute="centerX" id="6b2-be-sT4"/>
+                        <constraint firstAttribute="bottom" secondItem="ufP-aK-MGF" secondAttribute="bottom" id="8d2-32-1NM"/>
+                        <constraint firstAttribute="trailing" secondItem="ufP-aK-MGF" secondAttribute="trailing" id="XdO-Tq-jP8"/>
+                        <constraint firstItem="ufP-aK-MGF" firstAttribute="top" secondItem="Jtp-4a-gTk" secondAttribute="top" id="Y8E-bi-BGz"/>
+                        <constraint firstItem="z8g-Fu-cey" firstAttribute="centerY" secondItem="Jtp-4a-gTk" secondAttribute="centerY" constant="30" id="hir-l1-yAk"/>
+                        <constraint firstItem="ufP-aK-MGF" firstAttribute="leading" secondItem="Jtp-4a-gTk" secondAttribute="leading" id="u19-aQ-RxU"/>
+                    </constraints>
+                </visualEffectView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Jtp-4a-gTk" secondAttribute="trailing" id="9HE-BG-g2Q"/>
+                <constraint firstItem="Jtp-4a-gTk" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="IOT-8L-zgz"/>
+                <constraint firstItem="Jtp-4a-gTk" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="gCJ-cx-ajy"/>
+                <constraint firstAttribute="bottom" secondItem="Jtp-4a-gTk" secondAttribute="bottom" id="vLd-Ni-w6m"/>
+            </constraints>
+            <point key="canvasLocation" x="164" y="274.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="linkicon" width="33" height="32"/>
+    </resources>
+</document>
